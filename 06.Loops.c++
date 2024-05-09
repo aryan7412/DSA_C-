@@ -52,6 +52,24 @@ int main()
     /*FOR LOOP*/
 
     cout << "Enter the number of terms you want to print" << endl;
-    
+    cin >> n;
+
+    for(i=1; i<=n; i++)
+    {
+        cout << n;
+    }
+
+    for(int t=0,y=1;t>=0,y>=1; t--,y--)
+    {
+        cout << t << " " << y << endl;
+    }
+    /*CONTINUE*/
+    int q;
+    for( q=1; q<=3; q++)
+    {
+        cout << "Hi" << endl;
+        continue;
+        cout << "Hello" << endl;
+    }
 
 }
