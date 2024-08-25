@@ -10,7 +10,7 @@ int main()
     bool isprime = 1;
     for(i=2; i<x; i++)
     {
-        if(i%2==0)
+        if(x%i==0)
         {
             isprime = 0;
         }

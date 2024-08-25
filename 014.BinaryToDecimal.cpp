@@ -3,6 +3,7 @@
 using namespace std;
 int main() {
     int n,digit;
+    cout << "Enter the number in decimal form:" << endl;
     cin >> n;
     int i = 0, ans = 0 ;
     while( n != 0) {
