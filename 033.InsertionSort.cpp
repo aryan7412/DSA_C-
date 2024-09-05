@@ -1,23 +1,23 @@
 #include<iostream>
 using namespace std;
-void BubbleSort(int arr[],int n)
+void InsertionSort(int arr[],int n)
 {
     //arr = [4,3,2,1]
-    for(int i=0; i<n-1; i++)
+    for(int i=1; i<n; i++)
     {
-        bool swapped = false;
-        for(int j=0; j<n-i-1; j++)
+        int temp = arr[i];
+        int j = i-1;
+        for(;j>=0;j--)
         {
-            if(arr[j+1]<arr[j])
+            if(temp < arr[j])
             {
-                swap(arr[j],arr[j+1]);
-                swapped = true;
+                arr[j+1] = arr[j];
+            }
+            else{
+                break;
             }
         }
-        if(swapped == false)
-        {
-            break;
-        }
+        arr[j+1]=temp;
     }
 }
 int main()
@@ -31,7 +31,7 @@ int main()
     {
         cin >> arr[i] ;
     }
-    BubbleSort(arr, n);
+    InsertionSort(arr, n);
 
         cout << "Sorted array: " << endl;
         for (int i = 0; i < n; i++) {
