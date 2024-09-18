@@ -12,7 +12,8 @@ void reverse(char name[20], int n) {
 char toLower(char ch) {
     if (ch >= 'a' && ch <= 'z') {
         return ch;
-    } else {
+    }
+    else {
         char temp = ch - 'A' + 'a';
         return temp;
     }
